@@ -1,0 +1,33 @@
+.presentacion {
+  padding: 0rem 0 0 50rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.presentacion h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+.presentacion h1 span {
+  color: #ee82ee;
+}
+.presentacion p {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 1px 50px 0;
+  color: #ebf0f1;
+}
+.presentacion div {
+  margin: 100px 50px 0px 200px;
+  flex-direction: row;
+  align-items: center;
+}
+.presentacion div a img {
+  background-color: white;
+  border: solid 2px #ee82ee;
+  border-radius: 25%;
+  margin-right: 3rem;
+  padding: 10px;
+}

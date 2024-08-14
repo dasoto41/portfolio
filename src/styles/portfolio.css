@@ -1,0 +1,17 @@
+.portfolio-page {
+  padding-top: 100px; /* Para que el contenido comience debajo del navbar */
+  margin-left: 300px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  max-width: 80%; /* Ajusta este valor según el tamaño deseado */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.one {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: black;
+}

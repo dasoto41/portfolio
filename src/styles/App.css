@@ -1,0 +1,38 @@
+body {
+  background-color: #f599e5;
+}
+
+.nav {
+  background-color: rgb(245, 196, 196);
+
+  color: #ff6ce6c7;
+}
+.container {
+  width: 430px;
+  height: 200 px;
+  padding: 10px;
+  color: #eb51d1;
+}
+
+.button {
+  background-color: rgb(224, 14, 84);
+  color: rgb(238, 9, 135);
+}
+
+.home {
+  background-color: #f599e5;
+}
+
+.padre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-principal {
+  min-height: 100vh;
+  background-image: url("../../public/images/img.jpg");
+  background-size: cover; /* Para que la imagen cubra todo el contenedor */
+  background-position: center; /* Para centrar la imagen */
+  background-repeat: no-repeat; /* Para que la imagen no se repita */
+}

@@ -1,0 +1,90 @@
+/*Media querys*/
+
+/*Máximo 1920px*/
+@media (min-width: 1920px) {
+  .width-button button {
+    height: 85px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 25px;
+    padding-right: 3rem;
+  }
+  .navbar-toggler-icon {
+    width: 50px;
+    margin-left: 13px;
+  }
+  .letter {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: start;
+    margin-left: 40px;
+    width: 150px;
+  }
+}
+/*Máximo 1440px*/
+@media (min-width: 1440px) {
+  .width-button button {
+    height: 65px;
+    width: 80px;
+    margin-top: 30px;
+    margin-left: 25px;
+    padding-right: 3rem;
+  }
+  .navbar-toggler-icon {
+    width: 50px;
+    margin-left: 1px;
+  }
+  .letter {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+    margin-left: 50px;
+    width: 150px;
+  }
+}
+
+/*Máximo 1024px*/
+@media (max-width: 1024px) {
+  .width-button {
+    height: 100px;
+    width: 150px;
+    margin-top: 2rem;
+    padding-right: 1rem;
+  }
+  .letter {
+    font-weight: 700;
+    text-align: start;
+    margin-left: 2.4rem;
+  }
+}
+
+/*Máximo 480px*/
+@media (max-width: 480px) {
+  .width-button {
+    padding: 0 10rem 0 0;
+  }
+  .letter {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 30px;
+    width: 150px;
+  }
+  button {
+    margin-left: 2rem;
+  }
+}
+/*Máximo 320px*/
+@media (max-width: 320px) {
+  .width-button {
+    padding: 0 10rem 0 0;
+  }
+  .letter {
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 17px;
+    width: 150px;
+  }
+  button {
+    margin-left: 1rem;
+  }
+}
