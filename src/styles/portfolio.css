@@ -1,17 +1,65 @@
+.portfolio {
+  min-height: 100vh;
+  background-image: url("../../public/images/fondo4.jpg");
+  background-size: cover; /* Para que la imagen cubra todo el contenedor */
+  background-position: center; /* Para centrar la imagen */
+  background-repeat: no-repeat; /* Para que la imagen no se repita */
+}
+
 .portfolio-page {
   padding-top: 100px; /* Para que el contenido comience debajo del navbar */
-  margin-left: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 68%; /* Asegura que el contenido no se desplace */
 }
 
 .img {
   display: flex;
   align-items: center;
-  max-width: 80%; /* Ajusta este valor según el tamaño deseado */
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
 }
 
 .one {
   border-radius: 25px;
   border-style: solid;
   border-color: black;
+}
+
+@media (max-width: 767px) {
+  .portfolio-page {
+    margin: 0;
+    padding-top: 280px;
+    margin-left: 70px;
+  }
+
+  .img {
+    margin: 0;
+  }
+
+  .one {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 150px;
+  }
+}
+
+/* Media Query para pantallas más grandes que un notebook (ancho mayor a 1440px) */
+@media (min-width: 1441px) {
+  .portfolio-page {
+    padding-top: 120px;
+    margin-left: 400px; /* Mayor margen izquierdo para pantallas grandes */
+  }
+
+  .img {
+    max-width: 85%; /* Haz que las imágenes sean más grandes en pantallas grandes */
+  }
+
+  .one {
+    width: 85%; /* Aumenta el tamaño de las imágenes en pantallas más grandes */
+  }
 }

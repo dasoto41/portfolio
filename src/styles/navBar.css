@@ -1,29 +1,113 @@
-span a {
-  color: #fff;
+/* Mantener el navbar fijo en la parte superior */
+.navbar-dark {
+  position: fixed; /* Fija el navbar en la parte superior */
+  top: 0; /* Mantiene el navbar en la parte superior de la pantalla */
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  z-index: 1000; /* Coloca el navbar por encima de otros elementos */
 }
 
+/* Ajustes en la posición del contenedor */
 .container {
   display: flex !important;
-  justify-content: left !important;
+  justify-content: space-between !important; /* Ajusta para que el botón y el contenido estén alineados correctamente */
   align-items: center !important;
   width: 100% !important;
+  padding: 10px 20px; /* Ajusta el padding para dar espacio entre el navbar y el contenido */
 }
 
+/* Estilos del botón del menú */
 .navbar-toggler {
   border: none; /* Elimina cualquier borde */
   outline: none; /* Elimina el borde azul que aparece al hacer clic */
   box-shadow: none; /* Elimina cualquier sombra que pudiera estar apareciendo */
 }
 
-.navbar-toggler-icon {
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.letter {
-  font-size: 20px !important;
-}
-
+/* Estilo para el ícono de la hamburguesa */
 .fas.fa-bars {
-  font-size: 3.5rem; /* Ajusta el tamaño del ícono, puedes cambiar el valor según lo que necesites */
+  color: #d45db0;
+  font-size: 4rem; /* Ajusta el tamaño del ícono según sea necesario */
+}
+
+/* Estilo para los links */
+.letter {
+  font-size: 25px !important;
+  color: #d45db0 !important;
+  margin-left: 20px;
+}
+
+/* Asegura que los elementos de la lista se alineen correctamente */
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajustes para el avatar */
+.avatar {
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 10px;
+}
+
+.collapse {
+  transition: height 0.3s ease; /* Transición suave para evitar cambios bruscos */
+}
+
+.width-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Asegúrate de que el contenido del navbar no cause cambios en su altura */
+.navbar-collapse.show {
+  display: block !important;
+  position: absolute;
+  top: 90px; /* Ajusta según la altura de tu navbar */
+  left: 0;
+  width: 100%;
+}
+
+/* Ajustes específicos para pantallas móviles (máx. 768px) */
+@media (max-width: 768px) {
+  .navbar-dark {
+    width: 100%;
+    padding: 1px;
+  }
+
+  .navbar-toggler {
+    font-size: 1 rem; /* Ícono más pequeño en móviles */
+  }
+
+  .letter {
+    font-size: 20px !important; /* Texto más pequeño en móviles */
+  }
+
+  .avatar {
+    display: none !important;
+  }
+
+  .navbar-collapse.show {
+    top: 95px; /* Ajustar el margen del menú desplegable en móviles */
+  }
+}
+
+/* Ajustes para pantallas más grandes que notebook (mín. 1440px) */
+@media (min-width: 1440px) {
+  .navbar-dark {
+    padding: 20px 40px; /* Más espacio en pantallas grandes */
+  }
+
+  .fas.fa-bars {
+    font-size: 5rem; /* Ícono más grande en pantallas grandes */
+  }
+
+  .letter {
+    font-size: 30px !important; /* Texto más grande en pantallas grandes */
+    margin-left: 30px;
+  }
+
+  .avatar {
+    width: 40px !important; /* Avatar más grande en pantallas grandes */
+    height: 40px !important;
+  }
 }

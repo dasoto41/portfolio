@@ -1,18 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
-import Navbar2 from "./components/content/NavBar2";
-
-import Home from "./components/content/Home";
-
-import AcercaDeMi from "./components/content/AcercaDeMi";
-import Portfolio from "./components/content/Portfolio";
+import Navbar from "./components/NavBar";
+import Home from "./components/Home";
+import AcercaDeMi from "./components/AcercaDeMi";
+import Portfolio from "./components/Portfolio";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar2 />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AcercadeMi" element={<AcercaDeMi />} />

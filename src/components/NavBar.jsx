@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "../../styles/navBar.css";
-import "../../styles/mediaquery.css";
+import "../styles/navBar.css";
+import "../styles/mediaquery.css";
 
-import daniela from "../content/img/unnamed.jpg";
+import daniela from "../components/img/unnamed.jpg";
 import Avatar from "@mui/material/Avatar";
 
 const NavBar = () => {
@@ -47,13 +47,14 @@ const NavBar = () => {
                 Inicio
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item ">
               <Link
                 className="nav-link active letter"
                 to="/AcercadeMi"
                 onClick={closeNavbar}
               >
-                Acerca de Mi <Avatar alt="Daniela" src={daniela} />
+                Acerca de Mi
+                <Avatar className="avatar" alt="Daniela" src={daniela} />
               </Link>
             </li>
             <li className="nav-item">

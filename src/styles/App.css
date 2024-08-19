@@ -31,8 +31,18 @@ body {
 
 .contenedor-principal {
   min-height: 100vh;
-  background-image: url("../../public/images/img.jpg");
+  background-image: url("../../public/images/fondo8.jpg");
   background-size: cover; /* Para que la imagen cubra todo el contenedor */
   background-position: center; /* Para centrar la imagen */
   background-repeat: no-repeat; /* Para que la imagen no se repita */
+  display: flex;
+  justify-content: end;
 }
+
+/* @media (width > 650px) {
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+} */

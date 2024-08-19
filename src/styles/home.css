@@ -1,9 +1,8 @@
 .presentacion {
-  padding: 0rem 0 0 50rem;
-  color: white;
+  color: rgb(238, 113, 217);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin-right: 80px;
 }
 
 .presentacion h1 {
@@ -11,13 +10,13 @@
   font-weight: 700;
 }
 .presentacion h1 span {
-  color: #ee82ee;
+  color: #a03ae4;
 }
 .presentacion p {
   font-size: 40px;
   font-weight: 600;
-  margin: 1px 50px 0;
-  color: #ebf0f1;
+  margin: 1px 10px 0;
+  color: #d45db0;
 }
 .presentacion div {
   margin: 100px 50px 0px 200px;
@@ -30,4 +29,59 @@
   border-radius: 25%;
   margin-right: 3rem;
   padding: 10px;
+}
+
+/* Media queries para pantallas móviles (máximo 768px) */
+@media (max-width: 768px) {
+  .presentacion {
+    margin-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .presentacion h1 {
+    font-size: 50px; /* Ajustar tamaño de fuente */
+  }
+
+  .presentacion p {
+    font-size: 25px; /* Ajustar tamaño de fuente */
+    margin: 5px 0; /* Ajustar márgenes */
+  }
+
+  .presentacion div {
+    margin: 50px 0 0 0; /* Reducir márgenes en móviles */
+  }
+
+  .presentacion div a img {
+    margin-right: 1rem;
+    padding: 8px;
+    width: 40px; /* Ajustar tamaño de los iconos */
+    height: 40px;
+  }
+}
+
+/* Media queries para pantallas más grandes (mínimo 1440px) */
+@media (min-width: 1440px) {
+  .presentacion {
+    margin-right: 120px;
+  }
+
+  .presentacion h1 {
+    font-size: 100px; /* Aumentar tamaño de fuente */
+  }
+
+  .presentacion p {
+    font-size: 50px; /* Aumentar tamaño de fuente */
+  }
+
+  .presentacion div {
+    margin: 120px 50px 0px 250px;
+  }
+
+  .presentacion div a img {
+    margin-right: 4rem;
+    padding: 12px;
+    width: 60px; /* Aumentar tamaño de los iconos */
+    height: 60px;
+  }
 }

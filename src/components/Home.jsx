@@ -1,5 +1,5 @@
-import "../../styles/App.css";
-import "../../styles/home.css";
+import "../styles/App.css";
+import "../styles/home.css";
 const Home = () => {
   return (
     <div className="contenedor-principal">
@@ -8,7 +8,7 @@ const Home = () => {
           <span>Daniela</span> Soto
         </h1>
         <p className="subt">
-          Desarrolladora <span>Full Stack</span>
+          Full Stack <span>Developer</span>
         </p>
         <div className="position-320px">
           <a
