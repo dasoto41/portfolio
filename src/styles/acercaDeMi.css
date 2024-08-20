@@ -87,6 +87,19 @@
   font-size: 20px;
 }
 
+.btn {
+  background-color: rgb(206, 243, 239);
+  color: rgb(4, 103, 136); /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+
+.btn:hover {
+  background-color: rgb(245, 153, 184);
+}
+
 /* Media queries para pantallas de celular */
 @media screen and (max-width: 767px) {
   .about {

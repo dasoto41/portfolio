@@ -27,33 +27,66 @@ const AcercaDeMi = () => {
         <div className="certificates-section">
           <p className="title">VER CERTIFICADOS</p>
           <div className="box">
-            <a
-              href="https://drive.google.com/file/d/1xLFb7zWNKnSaNesAWwXAQT8NpOqwYwZu/view?usp=drive_link"
-              target="_blank"
-              rel="noreferrer"
-              className="itemBox"
+            <button
+              type="button"
+              className="btn itemBox"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="left"
+              data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+              data-bs-original-title="Popover Title"
+              aria-describedby="popover699892"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1xLFb7zWNKnSaNesAWwXAQT8NpOqwYwZu/view?usp=drive_link",
+                  "_blank",
+                  "noreferrer"
+                )
+              }
             >
-              <p>Desarrollo WEB</p>
-              <i className="fa-solid fa-file-arrow-down icon"></i>
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1KkuZxUOHn7J3my3oad4hr98xo6xHkv9Y/view?usp=drive_link"
-              target="_blank"
-              rel="noreferrer"
-              className="itemBox"
+              Desarrollo WEB
+            </button>
+
+            <button
+              type="button"
+              className="btn itemBox"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="left"
+              data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+              data-bs-original-title="Popover Title"
+              aria-describedby="popover699892"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1KkuZxUOHn7J3my3oad4hr98xo6xHkv9Y/view?usp=drive_link",
+                  "_blank",
+                  "noreferrer"
+                )
+              }
             >
-              <p>JavaScript</p>
-              <i className="fa-solid fa-file-arrow-down icon"></i>
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1cvR8s-tn3pY-EbXhyUgtpriIo85D2VTY/view?usp=drive_link"
-              target="_blank"
-              rel="noreferrer"
-              className="itemBox"
+              JavaScript
+            </button>
+
+            <button
+              type="button"
+              className="btn itemBox"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="left"
+              data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+              data-bs-original-title="Popover Title"
+              aria-describedby="popover699892"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1cvR8s-tn3pY-EbXhyUgtpriIo85D2VTY/view?usp=drive_link",
+                  "_blank",
+                  "noreferrer"
+                )
+              }
             >
-              <p>React JS</p>
-              <i className="fa-solid fa-file-arrow-down icon"></i>
-            </a>
+              React JS
+            </button>
+
             <a href="https://wa.link/l24l9e" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-whatsapp"></i>
             </a>
