@@ -1,5 +1,6 @@
 import "../styles/App.css";
 import "../styles/home.css";
+
 const Home = () => {
   return (
     <div className="contenedor-principal">

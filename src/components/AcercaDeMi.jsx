@@ -2,10 +2,16 @@ import React from "react";
 import "../styles/acercaDeMi.css";
 import daniela from "../components/img/unnamed.jpg";
 import Avatar from "@mui/material/Avatar";
+import smoke from "../assets/smoke.mp4";
 
 const AcercaDeMi = () => {
   return (
     <div className="about-container">
+      <div className="smoke-video-container">
+        <video autoPlay muted className="smoke-video">
+          <source src={smoke} type="video/mp4" />
+        </video>
+      </div>
       <div className="about">
         <p className="hijo">
           Hola!! Mi nombre es Daniela Soto y tengo 33 años. Mi perfil actual es

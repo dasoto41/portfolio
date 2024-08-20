@@ -58,7 +58,6 @@
   align-items: center;
 }
 
-/* Asegúrate de que el contenido del navbar no cause cambios en su altura */
 .navbar-collapse.show {
   display: block !important;
   position: absolute;
@@ -81,13 +80,17 @@
   .letter {
     font-size: 20px !important; /* Texto más pequeño en móviles */
   }
+  .fas.fa-bars {
+    color: #d45db0;
+    font-size: 2rem; /* Ajusta el tamaño del ícono según sea necesario */
+  }
 
   .avatar {
     display: none !important;
   }
 
   .navbar-collapse.show {
-    top: 95px; /* Ajustar el margen del menú desplegable en móviles */
+    top: 50px; /* Ajustar el margen del menú desplegable en móviles */
   }
 }
 

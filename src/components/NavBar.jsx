@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../styles/navBar.css";
-import "../styles/mediaquery.css";
 
 import daniela from "../components/img/unnamed.jpg";
 import Avatar from "@mui/material/Avatar";

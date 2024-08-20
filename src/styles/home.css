@@ -34,22 +34,21 @@
 /* Media queries para pantallas móviles (máximo 768px) */
 @media (max-width: 768px) {
   .presentacion {
-    margin-right: 0;
-    text-align: center;
-    align-items: center;
+    margin: 1px;
   }
 
   .presentacion h1 {
-    font-size: 50px; /* Ajustar tamaño de fuente */
+    font-size: 30px; /* Ajustar tamaño de fuente */
+    margin-left: 1px;
   }
 
   .presentacion p {
-    font-size: 25px; /* Ajustar tamaño de fuente */
-    margin: 5px 0; /* Ajustar márgenes */
+    font-size: 25px;
+    margin-left: 1px;
   }
 
   .presentacion div {
-    margin: 50px 0 0 0; /* Reducir márgenes en móviles */
+    margin: 120px 0 0;
   }
 
   .presentacion div a img {
