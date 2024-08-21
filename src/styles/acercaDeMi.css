@@ -107,6 +107,9 @@
     align-items: center;
     padding-top: 185px;
   }
+  .smoke-video {
+    opacity: 0.5; /* Aumenta la opacidad en dispositivos móviles */
+  }
 
   .hijo {
     font-size: 16px;
