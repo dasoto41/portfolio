@@ -86,6 +86,25 @@ const AcercaDeMi = () => {
             >
               React JS
             </button>
+            <button
+              type="button"
+              className="btn itemBox"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="left"
+              data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+              data-bs-original-title="Popover Title"
+              aria-describedby="popover699892"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1pp6ZWZ1TZG-s2gTXxTjSluht5bNqd0RH/view?usp=drive_link",
+                  "_blank",
+                  "noreferrer"
+                )
+              }
+            >
+              Backend
+            </button>
 
             <a href="https://wa.link/l24l9e" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-whatsapp"></i>
